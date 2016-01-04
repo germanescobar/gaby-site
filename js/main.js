@@ -163,7 +163,7 @@ app.config(['$routeProvider', function ($routeProvider) {
 
         isStickerQuestion: function() {
           // the index of the questions that hands sticker
-          var stickers = [2, 5, 8, 11, 14, 18, 22, 26, 30, 34, 39];
+          var stickers = [2, 5, 8, 11, 14, 18, 22, 26, 30, 34, 39, 43, 47, 51, 55];
           return stickers.indexOf(getIndex()) >= 0;
         },
 
@@ -230,7 +230,16 @@ app.config(['$routeProvider', function ($routeProvider) {
         { type: "sum", data: [1, 2] },
         { type: "sum", data: [0, 8] },
         { type: "sum", data: [3, 1] },
-        { type: "sum", data: [3, 2] }
+        { type: "sum", data: [3, 2] },
+        { type: "sum", data: [3, 3] },
+        { type: "sum", data: [2, 3] },
+        { type: "sub", data: [3, 1] },
+        { type: "sub", data: [1, 1] },
+        { type: "sub", data: [4, 1] },
+        { type: "sub", data: [2, 1] },
+        { type: "sub", data: [3, 2] },
+        { type: "sub", data: [2, 2] },
+        { type: "sub", data: [4, 1] }
       ];
 
       return {
